@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+/*---------- 基本設定(ここはいじらない)  ----------*/
+.mosaic,
+.mosaic_white{
+position: relative;
+line-height: 0;
+}
+.mosaic img,
+.mosaic_white img{
+width: 27px;
+margin:-5px;
+opacity: 0.5;
+}
+.mosaic .btn,
+.mosaic_white .btn{
+position: absolute;
+bottom: 30px;
+left: 50%;
+transform: translate(-50%, -50%);
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+z-index: 999;
+}
+/*---------- 以下はコンテンツに応じて適宜調整してください ----------*/
+/*外枠の設定*/
+.lead{ 
+    background:lightyellow;
+    border: 2px solid gold;
+    width: 320px;
+    padding: 15px;
+}
+.lead.lead_black{
+    background:#333;
+    border: 2px solid #111;
+    color: #fff;
+}
+.lead p{
+    margin-bottom: 10px;
+}
+.wrap {
+    padding: 30px 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 750px;
+    margin: auto;
+}
+
+/*続きを読むボタンの設定*/
+.btn a{
+    display: block;
+    overflow: hidden;
+    text-indent: -9999px;
+    white-space: nowrap;
+    background: url(./images/btn.png) no-repeat center;
+    background-size: 200px auto;
+    width: 200px;
+    margin: 0 auto;
+    height: 57px;
+}
+.mosaic .btn,
+.mosaic_white .btn{
+    width: 200px;
+}
